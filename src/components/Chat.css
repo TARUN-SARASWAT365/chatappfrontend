@@ -4,6 +4,7 @@
   align-items: center;
   height: 100vh;
   background-color: #1A1A1D;
+  padding: 10px;
 }
 
 .container {
@@ -12,16 +13,24 @@
   justify-content: space-between;
   background: #FFFFFF;
   border-radius: 8px;
-  height: 60%;
-  width: 35%;
+  height: 90%;
+  width: 100%;
+  max-width: 420px; /* Keeps desktop layout centered */
 }
 
-
-
+/* Medium devices (tablets) */
 @media (max-width: 768px) {
   .container {
-    width: 60%;
-    height: 80%;
+    height: 90%;
+    width: 90%;
+  }
+}
 
+/* Small devices (phones) */
+@media (max-width: 480px) {
+  .container {
+    height: 95%;
+    width: 100%;
+    border-radius: 0;
   }
 }
